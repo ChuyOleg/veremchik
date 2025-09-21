@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вітання з Днем Народження</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f7b4d7;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .greeting {
+      margin-top: 15vh;
+      font-size: 6vw; /* scales with screen width */
+      color: #333;
+      padding: 0 5vw;
+    }
+
+    .photos {
+      margin: 2vh 0 12vh 0;
+      display: flex;
+      gap: 5vw;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 5vw;
+    }
+
+    .photos img {
+      width: 40vw;
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 480px) {
+      .greeting {
+        font-size: 7vw;
+      }
+
+      .photos img {
+        width: 80vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="greeting">
+    <strong>Назар Веремінчик</strong>, з днем народження!
+  </div>
+
+  <div class="photos">
+      <img src="images/photo_1.jpg" class="photo-1" height="678px" width="1828px"/>
+      <img src="images/photo_2.jpg" class="photo-2" height="678" width="828"/>
+  </div>
+
+</body>
+</html>
